@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  background-color:#262626;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color:  #333333;
+  position: fixed;
+  height: 100%;
+  width:13%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color:#80ffe5 ;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.blackvbox{
+height:250px;
+background-color:black;
+text-align: center;
+color:white;
+
+
+}
+.p{
+color: #80ffe5;
+font-family:verdana;
+  font-size: 150px;
+ text-shadow: 7px 7px  #ff7733;
+
+}
+
+
+</style>
+
+</head>
+<body>
+
+<ul>
+   <li><div class="blackvbox" >
+            <div class="p">P</div>
+            <div style="font-family:verdana" >Prajwal</div>
+        <div style="font-family:'Courier New'">software engineer</div>
+        </div>
+   </li>
+
+  <li><a class="active" style="color:#000"href="/">Home</a></li>
+  <li><a href="about">about Me</a></li>
+  <li><a href="project">Project</a></li>
+    <li><a href="contact">Contact</a></li>
+    <li><a href="#" style="color:#333333">cmd </a></li>
+
+</ul>
+
+<div style="margin-left:13%;padding:1px 16px;">
+
+    {%block body%}
+
+    {%endblock body%}
+</div>
+
+
+</body>
+</html>
